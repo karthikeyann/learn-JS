@@ -11,7 +11,26 @@
 	document.writeln(age);
 	var name = "Karthikeyan";
 	document.write("My \"name\" is " + name + ".<br>" + "My age is " + age );
+	document.write("<br>")
+	document.write(add(3,6));
+		
+	function showme () {
+		alert("This is an Alert!!!");
+	}
+	function add(a,b) {
+	var c = a+ b;
+		return(c);
+	}
+	function showvalue( x) {
+		alert("I love " + x);
+	}
+	
 //-->
 </script>
+<form >
+<input type="button" value= "touch me" onclick = "showme()" >
+<input type="button" value= "love" onclick = "showvalue('karthik')" >
+</form>
+
 </body>
 </html>
