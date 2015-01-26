@@ -7,11 +7,14 @@
 <script type="text/javascript" >
 <!--
 	document.write("Hey karthik");
+	//Variables
 	var age = 24;
 	document.writeln(age);
 	var name = "Karthikeyan";
 	document.write("My \"name\" is " + name + ".<br>" + "My age is " + age );
 	document.write("<br>")
+	
+	//Functions
 	document.write(add(3,6));
 		
 	function showme () {
@@ -24,7 +27,7 @@
 	function showvalue( x) {
 		alert("I love " + x);
 	}
-	
+	// MATH and Conditionals
 	var a = 2 + 4 - 5 % 3 *8;
 	var b = 5;
 	b++;
@@ -53,8 +56,20 @@
 			break;
 		default:
 			document.write("<br>Name's invalid");
-			
 	}
+	
+	//Loops
+	for(x=0; x<5;x++) {
+		document.write("<br>x is "+ x);
+	}
+	x = 1;
+	while(x<10) {
+		document.write("<br> while loop"+x);
+		x++;
+	}
+	do {
+	document.write("<br>dowhile" + x--);
+	}while(x>35)
 //-->
 </script>
 <form >
