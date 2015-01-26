@@ -3,7 +3,7 @@
 <head>
 	<title>Title 1</title>
 </head>
-<body>
+<body OnLoad="alert('Web page has loaded.')"  OnUnLoad="alert('Web page has UN loaded.')" >
 <script type="text/javascript" >
 <!--
 	document.write("Hey karthik");
@@ -73,9 +73,11 @@
 //-->
 </script>
 <form >
-<input type="button" value= "touch me" onclick = "showme()" >
+<input type="button" value= "touch me" onclick = "alert('OnClick Alert is this'); alert('two times');" >
+<!-- > Event Handlers  </!-->
 <input type="button" value= "love" onclick = "showvalue('karthik')" >
 </form>
-
+<a href="http://www.twitter.com/lxkarthi" OnMouseOver="alert('lxkarthi\'s twitter');"> My Twitter</a>
+<a href="http://www.twitter.com/lxkarthi" OnMouseOut="alert('come back');"> LXKARTHI Twitter</a>
 </body>
 </html>
