@@ -35,6 +35,64 @@ This tutorial is for Objects inJS
 
 <script type="text/javascript">
 	document.write(karthik.name +  "will retire in " + karthik.yearsUntilRetire() + " years.");
+	
+	//Array
+	var people = new Array ("Ross", "Chandler", "Joey", "Monika", "Rachel", "Phoebe");
+	document.write(people[0] + people[5]);
+	 var things = new Array(3);
+	 things[0] = "Heater";
+	 things[1] = "Bucket";
+	 things[2] = "Washing Machine";
+	  var stuff = new Array();
+	  
+	  stuff[0] = things[0];
+	  stuff[1] = "Cooker";
+	  document.write(stuff.length);
+	  var obs = things.concat(stuff);
+	  document.write(obs[4]);
+	  var string1  = obs.join();
+	  document.write("<br>" + string1);
+	  string1=obs.join("-");
+	  document.write("<br>" + string1 + "<br>");
+	 document.write(obs.length);
+	 document.write(obs[obs.length-1]);
+	 obs.pop();
+	 document.write(obs.length);
+	 document.write(obs[obs.length-1]);
+	 document.write("<br>");
+	 
+	 var bp = new Array ( "head", "shoulders", "stomach", "knees", "toes");
+	 document.write(bp.join(" ") +"<br>");
+	  bp.reverse();
+	 document.write(bp.join(" ")+"<br>");
+	 bp.push("chest", "neck");
+	 document.write(bp.join(" ") +"<br>");
+	 bp.sort();
+	 document.write(bp.join(" ") +"<br>");
+	 
+	 document.write("<br>================<br>");
+	 var names =  new Array();
+	 for ( i=0;i<3;i++) {
+		names[i] = prompt("Enter you name:", "sample name");
+	 }
+	 //document.write("Hello " +names.join());
+	 for ( i=0;i<names.length;i++) {
+		document.write(names[i] + "<br>");
+	 }
+	 
+	 //Associative Array
+	 var pens = new Array();
+	 
+	 pens["blue"] = 3;
+	 pens["red"] = 5;
+	 pens["green"] = 2;
+	 document.write("Pens needed are<br>");
+	 var key, value1;
+	 for ( key in pens) {
+		value1 = pens[key];
+		document.write(key + ": "+ value1);
+	 }
+	 
 </script>
 <br>Text here is Body of HTML.
 </body>
