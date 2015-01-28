@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>
+This tutorial is for Objects inJS
+</title>
+<script type="text/javascript">
+	
+	function person ( name, age) {
+		this.name =  name;
+		this.age  = age;
+		this.yearsUntilRetire = yearsLeft;
+	}
+	
+	function yearsLeft() {
+		var numYears = 65 - this.age;
+		return numYears;
+	}
+</script>
+
+</head>
+<body>
+<script type="text/javascript">
+	//Objects
+	var lunch = "Free lunch is not over.";
+	document.write(lunch.length);
+	var karthik = new person("Karthikeyan", 24);
+	var nataraj = new person("Natarajan", 54);
+	document.write(karthik.name + " "  + nataraj.name);
+	
+	var ross = { name: "Ross Geller", age: 35, profession: "Paleontologist"};
+	var monika = { name: "Monika Geller", age: 37, profession: "Cook"};
+	document.write("<br> " + ross.name + " is a " + ross.profession);
+
+</script>
+
+<script type="text/javascript">
+	document.write(karthik.name +  "will retire in " + karthik.yearsUntilRetire() + " years.");
+</script>
+<br>Text here is Body of HTML.
+</body>
+</html>
