@@ -98,6 +98,18 @@ This tutorial is for Objects inJS
 	 var n = 82;
 	 var sqrtn = Math.sqrt(n);
 	 document.write("Sqrt(" + n  + ") is " + sqrtn);
+	 
+	 <script type="text/javascript">
+	 
+	 function dosome () {
+		var now = new Date();
+		var h = now.getHours(); 
+		var m = now.getMinutes();
+		var s = now.getSeconds();
+		document.write(h+":"+m+":"+s+"<br />");
+	 }
+	 
+	 setInterval("dosome()", 1000);
 </script>
 <br>Text here is Body of HTML.
 </body>

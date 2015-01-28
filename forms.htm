@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+
+
+<script type="text/javascript">
+	var x = document.forms[0].length;
+	document.write(x);
+	var y = document.forms[0].elements[0].name;
+	document.write(y);
+    var z = document.karthisForm.elements[1].name;
+	document.write(z);
+	z = document.karthisForm.username.type;
+	document.write(z);
+	document.write("<br>");
+	
+	function validator() {
+		if(document.karthisForm.rememberme.checked)
+			alert("I will remember You!");
+		if(document.karthisForm.username.value.length == 0) 
+			alert("Dont Leave Username empty.");
+		if(document.karthisForm.password.value.length == 0) 
+			alert("Dont Leave Password empty.");
+	}
+</script>
+<form name="karthisForm">
+	Username: <input type="text" name="username" />
+	Password: <input type="password"  name="password"/>
+	<input type="checkbox"  name="rememberme"/>
+	<input type="submit" value="Submit" OnClick = "validator()"/>
+</form>
+</body>
+</html>
